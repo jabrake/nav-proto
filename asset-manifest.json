@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nav-proto/static/css/main.52f1ddc6.css",
-    "main.js": "/nav-proto/static/js/main.ee4cd0a9.js",
+    "main.js": "/nav-proto/static/js/main.cb84b555.js",
     "static/js/787.648063f6.chunk.js": "/nav-proto/static/js/787.648063f6.chunk.js",
     "index.html": "/nav-proto/index.html",
     "main.52f1ddc6.css.map": "/nav-proto/static/css/main.52f1ddc6.css.map",
-    "main.ee4cd0a9.js.map": "/nav-proto/static/js/main.ee4cd0a9.js.map",
+    "main.cb84b555.js.map": "/nav-proto/static/js/main.cb84b555.js.map",
     "787.648063f6.chunk.js.map": "/nav-proto/static/js/787.648063f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52f1ddc6.css",
-    "static/js/main.ee4cd0a9.js"
+    "static/js/main.cb84b555.js"
   ]
 }
