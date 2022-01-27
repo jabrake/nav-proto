@@ -1,36 +1,16 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
 import React from 'react';
-import ReactDOM from 'react-dom';
+import LeftNavContainer from './components/LeftNavContainer.jsx';
 
 class App extends React.Component {
   constructor (props) {
     super (props);
 
     this.state = {
-      testState = '';
+      favorites: [],
+      coreTools: ['Reports', 'Directory', 'Tasks', 'Admin'],
+      projectManagementTools: ['Emails', 'RFIs', 'Submittals', 'Instructions', 'Transmittals', 'Inspections', 'Incidents', 'Observations', 'Punch List', 'Meetings', 'Schedule', 'Daily Logs', 'Photos', 'Forms'],
+      financialManagementTools: ['Prime Contracts', 'Budget', 'Commitments', 'Change Orders', 'Change Events', 'Direct Costs'],
+      resourceManagementTools: ['Timesheets', 'Crews', 'Equipment', 'T&M Tickets']
     };
   }
 
@@ -41,7 +21,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Hello! App mounted!
+        <LeftNavContainer
+          coreTools={this.state.coreTools}
+          projectManagementTools={this.state.projectManagementTools}
+          financialManagementTools={this.state.financialManagementTools}
+          resourceManagementTools={this.state.resourceManagementTools} />
       </div>
     )
   }
